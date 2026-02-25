@@ -16,7 +16,7 @@ Array::~Array()
 
 void Array::input()
 {
-    cout << "Введите элементы:\n";
+    cout << "Введите элементы массива:\n";
 
     for (int i = 0; i < size; i++)
     {
@@ -24,9 +24,24 @@ void Array::input()
     }
 }
 
+// Вывод массива с названием
 void Array::print()
 {
-    cout << "Массив:\n";
+    cout << "\nТекущий массив:\n";
+
+    for (int i = 0; i < size; i++)
+    {
+        cout << data[i] << " ";
+    }
+
+    cout << endl;
+}
+
+
+// Вывод массива без названия
+void Array::printWithoutName()
+{
+    cout << endl;
 
     for (int i = 0; i < size; i++)
     {
